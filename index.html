@@ -1,0 +1,284 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>App8 Mostrar Aplicaciones </title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/app8-tema2.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones1.js"></script>
+<script src="js/acciones2.js"></script>
+<script src="js/acciones3.js"></script>
+<script src="phonegap.js"></script>
+
+</head>
+<body>
+<div data-role="page" id="Principal" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <h1>App8 Mostrar Aplicaciones</h1>
+    </div>
+ 
+ <div data-role="main" class="ui-content">
+  <div>
+  <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-a">
+    <li class="ui-first-child ui-last-child">
+    <a href="#page1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2>APLICACION 01</h2>
+  <h3>(-Datos del Dispositivo-)</h3>
+   </a>
+  </li>
+  </ul>
+  </div>
+  </div>
+  
+  
+  <div data-role="main" class="ui-content">
+  <div>
+  <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-a">
+    <li class="ui-first-child ui-last-child">
+    <a href="#page4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2>APLICACION 05</h2>
+  <h3>(-Bippear y vibrar-)</h3>
+   </a>
+  </li>
+  </ul>
+  </div>
+  </div>
+  
+  
+  <div data-role="main" class="ui-content">
+  <div>
+  <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-a">
+    <li class="ui-first-child ui-last-child">
+    <a href="#page6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2>APLICACION 07</h2>
+  <h3>(-Deslizar-)</h3>
+   </a>
+  </li>
+  </ul>
+  </div>
+  </div>
+  
+  
+
+ <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+  <h4>app8 ACCIONES</h4>
+  <h4>Christian Ariel Peregrina Garcia</h4>
+   <img src="imagenes/Music-player-icon.png" width="56" height="46">
+   </div>
+   </div>
+   
+   
+   <div data-role="page" id="page1" data-theme="b">
+	<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <h1>Datos del Dispositivo</h1>
+    </div>
+    
+<div data-role="main" class="ui-content">
+<div>
+ <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-a">
+  <li class="ui-first-child ui-last-child">
+  <a href="#page2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2>Dispositivo</h2>
+   </a>
+  </li>
+  <li class="ui-first-child ui-last-child">
+   <a href="#page3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+   <h2>Eventos</h2>
+   </a>
+  </li>
+ </ul>
+</div>
+</div>
+  
+  <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+    <h4>Peregrina Garcia Christian Ariel</h4>
+     <img src="res/android/mdpi.png" width="56" height="46">
+  </div>
+ </div>
+ 
+ <div data-role="page" id="page2" data-theme="b">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a"> 
+      <h1>Dispositivo</h1>
+    </div>
+     <div data-role="main" class="ui-content">
+      <div id="disp">
+<table width="200" border="1" id="datos">
+  <tr>
+    <td width="83">Datos</td>
+    <td width="101">Dispositivo</td>
+  </tr>
+  <tr>
+    <td>Nombre</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>Phonegap</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr> 
+    <td>Plataforma</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>Version</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>UUID</td>
+    <td>&nbsp;</td>
+  </tr>
+ </table>
+   </div>
+  </div>
+  
+   <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+       <h4>Peregrina Garcia Christian Ariel</h4>
+      <img src="res/android/mdpi.png" width="56" height="46">
+    </div>
+   </div>
+   
+<div data-role="page" id="page3" data-theme="b">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+     <h1>Eventos</h1>
+    </div>
+  <div data-role="main" class="ui-content">
+    <div>
+      <h2>Historia</h2>
+    <ul id="eHistoria">
+     </ul>
+    </div>
+   </div>
+   
+    <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+      <h4>Peregrina Garcia Christian Ariel</h4>
+     <img src="res/android/mdpi.png" width="56" height="46">
+    </div>
+   </div>
+   
+   
+   
+   <div data-role="page" id="page4" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <h1>Advertencias del dispositivo</h1>
+    </div>
+ 
+ <div data-role="main" class="ui-content" align="center">
+  <div style="width:40%;">
+  <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+    <li class="ui-first-child ui-last-child">
+    <a href="#" data-role="button" id="sonar">
+  <h2>Beep</h2>
+   </a>
+  </li>
+  <li class="ui-first-child ui-last-child">
+   <a href="#" data-role="button" id="vibrar">
+   <h2>Vibrar</h2>
+   </a>
+   </li>
+  </ul>
+ </div>
+</div>
+
+ <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+  <h4>Peregrina Garcia Christian Ariel</h4>
+   <img src="imagenes/Music-player-icon.png" width="56" height="46">
+   </div>
+   </div>
+  
+   <div data-role="page" id="page6" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <h1>Aplicacion 7 Deslizar(swipe)</h1>
+    </div>
+ 
+ <div data-role="main" class="ui-content">
+  <div>
+  <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-a">
+    <li class="ui-first-child ui-last-child">
+    <a href="#page7" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2>Deslizar</h2>
+   </a>
+  </li>
+  </ul>
+  </div>
+  </div>
+
+ <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+  <h4>app7 Christian Ariel Peregrina Garcia</h4>
+   <img src="imagenes/Music-player-icon.png" width="56" height="46">
+   </div>
+   </div>
+   
+   
+   <div data-role="page" id="page7" data-theme="b">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>Acciones</h1>
+    </div>
+    
+    <div data-role="main" class="ui-content">
+  <div>
+  <ul data-role="controlgroup" data-type="vertical" data-theme="b" class="ui-listview ui-group-theme-a">
+    <li class="ui-first-child ui-last-child">
+    <a href="#page9" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2>Izquierda</h2>
+   </a>
+  </li>
+   <li class="ui-first-child ui-last-child">
+    <a href="#page10" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2>Derecha</h2>
+   </a>
+  </li>
+  </ul>
+  </div>
+  </div>
+  
+  <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+  <h4>app7 Christian Ariel Peregrina Garcia</h4>
+   <img src="imagenes/Music-player-icon.png" width="56" height="46">
+   </div>
+   </div>
+  
+  <div data-role="page" id="page9" data-theme="b">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1>Desliza a la Izquierda</h1>
+  </div>
+  <div data-role="content" align="center">
+  <div id="izquierda" style="width:90%;height:300px;background-color:#09F;">
+  </div>
+  
+  </div>
+  <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+  <h4>app7 Christian Ariel Peregrina Garcia</h4>
+   <img src="imagenes/Music-player-icon.png" width="56" height="46">
+   </div>
+   </div>
+   
+   
+   <div data-role="page" id="page10" data-theme="b">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1>Desliza a la Derecha</h1>
+  </div>
+  <div data-role="content" align="center">
+  <div id="derecha" style="width:90%;height:300px;background-color:#9F3;">
+  </div>
+  
+  </div>
+  <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+  <h4>app7 Christian Ariel Peregrina Garcia</h4>
+   <img src="imagenes/Music-player-icon.png" width="56" height="46">
+   </div>
+   </div>
+   
+   
+   
+       
+  </body>
+  </html>
+  
+ 
